@@ -1,0 +1,359 @@
+body{
+    background: black;
+    font-family: 'Open Sans', 'Source Sans Pro', arial, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 2;
+}
+a{
+    transition: color .2s linear, border .2s linear;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color: #49bf9f;
+}
+a:hover{
+    border-bottom-color: transparent;
+}
+img{
+    max-width: 100%
+}
+header img{
+    margin-top: 40%;
+    width: 40%;
+}
+p{
+    margin: 0 0 2em;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #787878;
+    font-weight: normal;
+    margin: 1em 0;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 26px;
+}
+h4{
+    font-size: 22px;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-size: 15px;
+}
+
+sub, sup{
+    font-size: 12px;
+}
+blockquote{
+    border-left: 5px solid #efefef;
+    margin: 2em 0;
+    padding: .5em 0 .5em 1.5em;
+}
+
+code{
+    background: #f7f7f7;
+    border-radius: .35em;
+    border: 2px solid #efefef;
+    font-size: .9em;
+    padding: .25em .65em;
+    font-family: 'Courier New', Courier;
+    color: #929292;
+}
+pre code{
+    display:block;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+    padding-left: 1.1em;
+}
+li{
+    padding-left: .5em;
+}
+.ul-alternada{
+    list-style-type: none;
+    padding-left: 0;
+
+}
+.ul-alternada li{
+    border-bottom: 2px solid #d8d8d8;
+    padding-left: 0;
+}
+.ul-alternada li:last-child{
+    border: 0;
+}
+.ul-icone{
+    list-style-type: none;
+    padding-left: 0;
+}
+.ul-icone li{
+    display: inline-block;
+    font-size: 1.5em;
+    color: #49bf9d;
+}
+.contato{
+    padding-top: 10%;
+}
+#navegação{
+    float: right;
+    font-size: 15px;
+    display: flex;
+    list-style:none;
+}
+#navegação li{
+    border-right: 2px solid white;
+    padding: 0 2%;
+}
+#navegação li:last-child{
+    border-right: none;
+}
+#navegação li:first-child{
+    padding-left: 35px;
+}
+#navegação li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    border-bottom-color: transparent;
+}
+input, label, textarea, select{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+input, textarea, select{
+    background: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin-bottom: 15px;
+}
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+}
+input:focus, textarea:focus{
+    border: 2px solid #49bf9d;
+    outline: none;
+}
+textarea{
+    height: 10em;
+}
+.botão-default{
+    background-color: white;
+    border: 3px solid white;
+    color: black;
+    padding: .55em 1.5em;
+    border-radius:5px ;
+    font-size: .8em;
+    display: inline-block;
+    width: auto;
+    transition: all .5s;
+    cursor: pointer;
+}
+.botão-default:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: transparent;
+    color: white;
+}
+.botão-default-stroke{
+    background-color: black;
+    border-color: white;
+    color: white;
+    outline: 2px;
+}
+.botão-default-stroke:hover{
+    color: black;
+    border-color: transparent;
+    background-color: white;
+}
+.botão-default-pequeno{
+    font-size: .65em;
+}
+.botão-default-big{
+    font-size: 1em;
+}
+.botão-default-full{
+    display: block;
+    text-align: center;
+}
+.menu-cabeçalho-link img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-link{
+    border: 0;
+}
+.menu-cabeçalho{
+    border-radius: 0 5px 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25%;
+    padding: 25px 54px 72px 10px;
+    box-sizing: border-box;
+    background-image:url(../imagens/overlay.png),url(../imagens/bg.jpg);
+    background-position: left top;
+    background-size: auto, cover;
+    text-align: center;
+}
+.menu-cabeçalho-titulo{
+    font-size: 150%;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .5);
+    font-weight: normal;
+}
+.menu-cabeçalho-titulo strong{
+    color: white;
+    font-weight: normal;
+}
+.menu-cabeçalho-link{
+    color: inherit;
+}
+.menu-cabeçalho-link:hover{
+    color: #49bf9d;
+}
+.menu-conteudo{
+    width: 75%;
+    margin-left: 25%;
+    padding: 45px 54px 72px;
+    box-sizing: border-box;
+}
+.paragrafo-home{
+    font-size: 2em;
+    text-align: center;
+    text-shadow: -2px 2px 2px rgba(255, 0, 0, 0.5);
+}
+.menu-conteudo h2:first-child, h3{
+    text-transform: uppercase;
+    border-radius: 0 15px 15px 0;
+    margin-left: -60px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+.cartao-trabalhos-recentes img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cartao-trabalhos-recentes-descrição{
+    font-size: .8em;
+}
+.cartao-trabalhos-recentes-titulo{
+    font-size: .7em;
+    margin-bottom: 0;
+}
+.galeria-img img{
+    width: 100%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+.galeria-thumb img{
+    margin-bottom: 2%;
+    display: inline-block;
+    border-radius: 5px;
+}
+/* Grid */
+.row{
+    overflow: auto;
+}
+.col-2{
+    width: 40%;
+    float: left;
+}
+.col-2:first-child{
+    margin-right: 10%;
+} 
+.col-2:last-child{
+    margin-left: 10%;
+}
+.col-2-3{
+    width: 66%;
+    float: left;
+}
+.col-1-3{
+    text-align: center;
+    width: 32%;
+    float: left;
+}
+.col-1-3 address{
+    padding-top: 2em;
+}
+.col-1-3:nth-child(3n - 2){
+    margin-right: 2%;
+}
+.col-1-3:nth-child(3n){
+    margin-left: 2%;
+}
+.col-2-3 + .col-1-3, .col-1-3 + .col-2-3{
+    margin-left: 2%;
+}
+.tabela{
+    width: 100%;
+    margin: 0 0 2em 0;
+    border-collapse: collapse;
+    text-align: left;
+} 
+.tabela td{
+    padding: .75em;
+}
+.tabela th{
+    background: #ccc;
+    padding: .75em;
+}
+.tabela tbody tr td{
+    border-bottom:1px solid #ccc;
+}
+.tabela tbody tr:first-child td{
+    border-top: 2px solid #666;
+}
+.tabela tbody tr:last-child td{
+    border-bottom: 2px solid #666;
+}
+.tabela tbody tr:nth-child(odd) td{                                    /*filhos impares (odd) filhos pares (even)*/
+    background: #eee;
+}
+.tabela-alternada tbody td, .tabela-alternada tbody tr:first-child td, .tabela-alternada tbody tr:last-child td{
+    border: 1px solid #ddd;
+}
+.img-esquerda{
+    display: inline;
+    float: left;
+    margin-right: 1em;
+}
+.img-direita{
+    display: inline;
+    float: right;
+    margin-left: 1em;
+}
+.menu-rodape{
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 25%;
+    padding: 0px 54px 72px 0px;
+    box-sizing: border-box;
+    text-align: right;
+}
+.icone-link{
+    border: 0;
+}
+.copyright li{
+    display: inline-block;
+}
+.copyright li:first-child{
+    border-right: 1px solid #666;
+    padding-right: 1em;
+    box-sizing: border-box;
+}
+.copyright a{
+    color: inherit;
+}

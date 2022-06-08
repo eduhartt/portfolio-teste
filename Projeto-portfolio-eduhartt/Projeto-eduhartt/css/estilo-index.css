@@ -1,0 +1,130 @@
+body{
+    background: black;
+    font-family: 'Open Sans', 'Source Sans Pro', arial, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 2;
+}
+a{
+    transition: color .2s linear, border .2s linear;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color: #49bf9f;
+}
+a:hover{
+    border-bottom-color: transparent;
+}
+header img{
+    margin-top: 7%;
+    width: 15%;
+}
+h1{
+    margin: 1em 0;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+    padding-left: 1.1em;
+}
+li{
+    padding-left: .5em;
+}
+.ul-icone{
+    list-style-type: none;
+    padding-left: 0;
+}
+.ul-icone li{
+    display: inline-block;
+    font-size: 1.5em;
+    color: #49bf9d;
+}
+#navegação{
+    padding-top: 25px;
+    font-size: 15px;
+    display: flex;
+    list-style:none;
+}
+#navegação li{
+    float: left;
+    border-right: 2px solid white;
+    padding: 0 1em;
+}
+#navegação li:last-child{
+    border-right: none;
+}
+#navegação li a{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    border-bottom-color: transparent;
+}
+.div-navegação{
+    display:flex ;
+    justify-content: center;
+}
+.menu-cabeçalho-link img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-link{
+    border: 0;
+}
+.menu-cabeçalho{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-image:url(../imagens/overlay.png),url(../imagens/bg.jpg);
+    background-position:center;
+    background-size: auto, cover;
+    text-align: center;
+}
+.menu-cabeçalho-titulo{
+    padding-top: 1em;
+    font-size: 30px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .5);
+    font-weight: normal;
+}
+.menu-cabeçalho-titulo strong{
+    color: white;
+    font-weight: normal;
+}
+.menu-cabeçalho-link{
+    color: inherit;
+}
+.menu-cabeçalho-link:hover{
+    color: #49bf9d;
+}
+
+.paragrafo-home{
+    font-size: 2em;
+    text-align: center;
+    text-shadow: -2px 2px 2px rgba(255, 0, 0, 0.5);
+}
+.menu-rodape{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+    padding: 0px 54px 72px;
+    box-sizing: border-box;
+    text-align: right;
+}
+.icone-link{
+    font-size: 35px;
+    border: 0;
+    color: #49bf9d;
+}
+.copyright li{
+    font-size: 15px;
+    display: inline-block;
+    color: #49bf9d;
+}
+.copyright li:first-child{
+    border-right: 1px solid #666;
+    padding-right: 1em;
+    box-sizing: border-box;
+}
+.copyright a{
+    color: #49bf9d;
+}
